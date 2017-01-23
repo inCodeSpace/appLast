@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>appLast</title>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/spoiler.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>AppLast: <small>Описание последних рабочих проектов</small></h1>
+    </div>
+    <div id="box">
+<!-- App №1 -->
+        <div class="titleAppsBox">
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <h3 class="titleApps">Встречи</h3>
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <div class="titleAppsTagBox">
+                <span class="titleAppsTag">Yii2</span>
+                <span class="titleAppsTag">MySQL</span>
+                <span class="titleAppsTag">JQuery</span>
+                <span class="titleAppsTag">AJAX</span>
+            </div>
+        </div>
+        <!-- photoSlide -->
+        <a class="imgBox1" href="img/appImg/fullSize/vsApp01.jpg" data-lightbox="vsApp" data-title="vsApp">
+            <img src="img/appImg/smallSize/vsTh.jpg" alt="vsApp"/>
+        </a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp02.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp03.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp04.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp05.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp06.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp07.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp08.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp09.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp10.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp11.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <a class="hiddenImg" href="img/appImg/fullSize/vsApp12.jpg" data-lightbox="vsApp" data-title="vsApp"></a>
+        <!-- Content -->
+        <h3 class="titleInfo">Описание проекта:</h3>
+        <p class="contentText1">
+            Сайт организации групп и встреч, для 4х стран по регионам и городам.<br>
+            • Выполнен на Yii2 Advanced<br>
+            • Существующий проект на Yii1, с нуля (кроме частино-css) создан на Yii2<br>
+            • Использовался GitLab<br>
+            • Создание групп с заданием интересов<br>
+            • Создание встреч для данной группы<br>
+            • Альбомы с фотографиями по группам/встречам<br>
+            • Мультиязычность...<br>
+        </p>
+        <!-- # Spoiler -->
+        <div class="spoilerBox">
+            <!-- Блок-заголовок, клик по которому сворачивает/разворачивает контент -->
+            <div class="spoilerTitle spoilerTitle-closed">
+                Подробно
+                <span class="spoilerTitle-arrowDown"> ▼</span>
+                <span class="spoilerTitle-arrowUp"> ▲</span>
+            </div>
+            <!-- Блок служит для одновременного сворачивания элементов -->
+            <div class="spoilerContentBox">
+                <!-- Блок содержащий контент -->
+                <div class="spoilerContent">
+
+                    <h3 class="titleInfo">Меню:</h3>
+                    <p class="contentText1">
+                        - 2х уровневые пункты меню (данные из БД для данного пользователя)<br>
+                        - Yii2 bootstrap Nav, NavBar<br>
+                    </p>
+
+                    <h3 class="titleInfo">StepWizard c ActiveForm:</h3>
+                    <p class="contentText1">
+                        - StepWizard состоящий из (AJAX) связанных выпадающих списков с автокомплитом<br> (kartik-DepDrop\Select2)<br>
+                        - Данные в списках из БД, обычные поля и поля с возможностью добавлением ключевых слов.<br>
+                    </p>
+
+                    <h3 class="titleInfo">Стена (комментарии):</h3>
+                    <p class="contentText1">
+                        - Стена: 2-х уровневых комментариев с подгрузкой новых комментариев по AJAX-у<br>
+                        (полученные данные в формате JSON используются для генерации HTML-я).<br>
+                        AJAX-добавление нового комментария (данные заносятся в БД) комментарии выводятся<br>
+                        в целевое место (либо в начало стены, либо ниже в блок комментария, если это ответ на <br> комментарий и выполняется прокрутка к место добавленного комментария).<br>
+                    </p>
+
+                    <h3 class="titleInfo">Разное:</h3>
+                    <p class="contentText1">
+                        - PJAX Grid-ы с пагинацией встроенные в страницы.<br>
+                        - Создание нового пользователя, с отправкой ссылки на почту с подтверждением.<br>
+                        - Модальные окна с AJAX формами или сборными формами (формы с скрытыми полями) с использованием TimePicker, DatePicker, модальное окно по успешному завершению.<br>
+                        - Встроенный виджет Pjax ListView с пагинацией и свитчером отображения (видом и данных).<br>
+                        - Спойлеры.<br>
+                        - Модальное окно входа на сайт (с авторизацией через соц. сети (сделано не до конца)).<br>
+                        - JS-Календарь: ячейки дней заполняются данными из БД<br> (в виде ссылок на данное событие, route).<br>
+                        - Отправка пригласительного письма по почте.<br>
+                        - Фотоальбом и фотогалерея.<br>
+                        - Создание нового фотоальбома и загрузки фотографий с созданием миниатюр.<br>
+                    </p>
+                    <!-- #END contentText -->
+                </div>
+                <!-- Блок-закладка для сворачивания контента -->
+                <div class="spoilerCloseBox">
+                    <div class="spoilerCloseTab" title="Свернуть">▲</div>
+                </div>
+            </div>
+        </div><!-- Spoiler # -->
+
+        <!-- Блок Технологии: -->
+        <h3 class="titleInfo">Технологии:</h3>
+        <p class="contentText1">
+            Yii2 Advanced, origCSS + ownCSS + bootstrap, jQuery, AJAX, Yii2 bootstrap Nav, NavBar<br>
+            PJAX Grid, kartik-DepDrop\Select2, ротатор картинок, TimePicker, DatePicker..
+        </p>
+        <!-- # Spoiler -->
+        <div class="spoilerBox">
+            <!-- Блок-заголовок, клик по которому сворачивает/разворачивает контент -->
+            <div class="spoilerTitle spoilerTitle-closed">
+                Подробно
+                <span class="spoilerTitle-arrowDown"> ▼</span>
+                <span class="spoilerTitle-arrowUp"> ▲</span>
+            </div>
+            <!-- Блок служит для одновременного сворачивания элементов -->
+            <div class="spoilerContentBox">
+                <!-- Блок содержащий контент -->
+                <div class="spoilerContent">
+
+                    <h3 class="titleInfo">Управление и организация ролей (RBAC):</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/jeffwalsh/yii2-rbac-plus" target="_blank" title="URL репозиторий">
+                            https://github.com/jeffwalsh/yii2-rbac-plus
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Боковое Меню (kartik):</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon1" href="http://demos.krajee.com/sidenav-demo/profile/default" target="_blank" title="URL репозиторий">
+                            http://demos.krajee.com/sidenav-demo/profile/default
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Визуальный редактор (CKEditor WYSIWYG widget for Yii2):</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/2amigos/yii2-ckeditor-widget" target="_blank" title="URL репозиторий">
+                            https://github.com/2amigos/yii2-ckeditor-widget
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Аутентификация: Yii2 EAuth extension</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/Nodge/yii2-eauth" target="_blank" title="URL репозиторий">
+                            https://github.com/Nodge/yii2-eauth
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Мультиязычность: yii2-language-picker:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/lajax/yii2-language-picker" target="_blank" title="URL репозиторий">
+                            https://github.com/lajax/yii2-language-picker
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Виджет добавления файлов (kartik):</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon1" href="http://demos.krajee.com/widget-details/fileinput" target="_blank" title="URL репозиторий">
+                            http://demos.krajee.com/widget-details/fileinput
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Сортированный список и grid с использованием drag and drop API:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon1" href="http://demos.krajee.com/sortable" target="_blank" title="URL репозиторий">
+                            http://demos.krajee.com/sortable
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Сортировка ActiveRecords и связанных записей для Yii2:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon1" href="https://packagist.org/packages/infoweb-internet-solutions/yii2-sortable-behavior" target="_blank" title="URL репозиторий">
+                            https://packagist.org/packages/infoweb-internet-solutions/yii2-sortable-behavior
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Handles ActiveRecord's attribute translations:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/2amigos/yii2-translateable-behavior" target="_blank" title="URL репозиторий">
+                            https://github.com/2amigos/yii2-translateable-behavior
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Виджет пошагового заполнения:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/drsdre/yii2-wizardwidget" target="_blank" title="URL репозиторий">
+                            https://github.com/drsdre/yii2-wizardwidget
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Виджет связных выпадающийх списков:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/kartik-v/yii2-widget-depdrop" target="_blank" title="URL репозиторий">
+                            https://github.com/kartik-v/yii2-widget-depdrop
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Календарь событий:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/thiagotalma/yii2-talma-fullcalendar-widget" target="_blank" title="URL репозиторий">
+                            https://github.com/thiagotalma/yii2-talma-fullcalendar-widget
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Фотогалереи для Yii2:</h3>
+                    <p class="contentText1">
+                        <a class="linkApp linkAppIcon2" href="https://github.com/nirvana-msu/yii2-prettyphoto" target="_blank" title="URL репозиторий">
+                            https://github.com/nirvana-msu/yii2-prettyphoto
+                        </a><br>
+                        <a class="linkApp linkAppIcon1" href="https://packagist.org/packages/branchonline/yii2-lightbox" target="_blank" title="URL репозиторий">
+                            https://packagist.org/packages/branchonline/yii2-lightbox
+                        </a><br>
+                    </p>
+
+                    <h3 class="titleInfo">Разное:</h3>
+                    <p class="contentText1">
+                        - kartik TimePicker<br>
+                        - kartik DatePicker<br>
+                        - Ротатор картинок<br>
+                        - Yii2 DropDownMenu (2-х уровневые списки из значений в БД, для данного пользователя)<br>
+                        - Yii2 bootstrap Modal<br>
+                        - Yii2 bootstrap Nav, NavBar<br>
+                        - Yii2 Pjax<br>
+                        - Yii2 ListView<br>
+                        - Yii2 GridView<br>
+                    </p>
+
+                    <!-- #END contentText -->
+                </div>
+                <!-- Блок-закладка для сворачивания контента -->
+                <div class="spoilerCloseBox">
+                    <div class="spoilerCloseTab" title="Свернуть">▲</div>
+                </div>
+            </div>
+        </div><!-- Spoiler # -->
+
+        <!-- Ссылки на код -->
+        <h3 class="titleInfo">Links <small>(частично выбранный код, для примера)</small></h3>
+        <p class="contentText1">
+            <a class="linkApp linkAppIcon1" href="img/appImg/fullSize/vsCodeViewGroupCommentBox.jpg" target="_blank" title="">
+                view-файл вывода сomments
+            </a><br>
+            <a class="linkApp linkAppIcon1" href="img/appImg/fullSize/vsCodeGroupJsScript.jpg" target="_blank" title="">
+                AJAX-подгрузка comments (JS-вывод)
+            </a><br>
+            <a class="linkApp linkAppIcon1" href="img/appImg/fullSize/vsCodeNavGroupWidget.jpg" target="_blank" title="">
+                Виджет Nav (инициализация)
+            </a><br>
+            <a class="linkApp linkAppIcon1" href="img/appImg/fullSize/vsCodeModelCommentGroup.jpg" target="_blank" title="">
+                файл модели
+            </a><br>
+            <a class="linkApp linkAppIcon1" href="img/appImg/fullSize/vsCodeWGroupCalendar.jpg" target="_blank" title="">
+                Виджет Календаря (инициализация)
+            </a><br>
+            <a class="linkApp linkAppIcon1" href="img/appImg/fullSize/vsCodePageController.jpg" target="_blank" title="">
+                Один из файлов сontroller (часть файла)
+            </a><br>
+        </p>
+        <br>
+
+<!-- App №2 -->
+        <div class="titleAppsBox">
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <h3 class="titleApps">pickupMyNow</h3>
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <div class="titleAppsTagBox">
+                <span class="titleAppsTag">Yii2</span>
+                <span class="titleAppsTag">webSockets</span>
+                <span class="titleAppsTag">Ratchet</span>
+                <span class="titleAppsTag">ZeroMQ</span>
+            </div>
+        </div>
+        <!-- Content -->
+        <h3 class="titleInfo">Описание проекта:</h3>
+        <p class="contentText1">
+            Приложение помогающее добраться с точки А до точки Б<br>
+            • Пересылка координат между клиентом и клиентом через сервер с помощью webSocket-ов<br>
+            • Чат на webSocket-ах (в браузере)<br>
+            • Авторизацию/аутентификацию через FaceBook с использованием API budgettaxi<br>
+            • Небольшой личный кабинет с загрузкой изображений пользователем.<br>
+        </p>
+
+        <!-- # Spoiler -->
+        <div class="spoilerBox">
+            <div class="spoilerTitle spoilerTitle-closed">
+                Подробно
+                <span class="spoilerTitle-arrowDown"> ▼</span>
+                <span class="spoilerTitle-arrowUp"> ▲</span>
+            </div>
+            <div class="spoilerContentBox">
+                <!-- Блок содержащий контент -->
+                <div class="spoilerContent">
+                    <p class="contentText1">
+                        - Авторизация/аутентификация частично обработка route, обработка данных связанных с renew_token и тп.<br>
+                        - Интерфейс "документов" пользователя (загрузка изображений и их Yii2 CRUD)<br>
+                        <h3 class="titleInfo">Ratchet:</h3>
+                        - Ratchet: (Библиотека php для работы с webSockets, socketo.me)<br>
+                        - Разбирался как с ней работать и интегрировать её в Yii2.<br>
+                        - Разбирался с работой Ratchet PUSH (отправка данных клиентам с сервера).<br>
+                        - Описывание интрефейсов Ratchet, реализация основных (не всё) методов Ratchet<br>
+                        - Интеграция ZeroMQ (http://zeromq.org/) (работа с web socket-ами обслуживание очередей)<br>
+                        - п.1 Отправка сообщений клиент-сервер-клиент(ы) (через консоль)<br>
+                        - п.2 Отправка сообщений клиент-сервер-клиент(ы) (браузер js-script)<br>
+                        - Чат в браузере: (на базе п.1 и п.2 и как html-ответ на реализованные <br>
+                            интерфейсы Ratchet) прием и обработка обращений из webSocket <br> 
+                            (по сути разбор JSON туда-сюда и вывод его в чат на jQuery)<br>
+                        <h4 class="titleInfo">Что я не делал в проекте:</h4>
+                        - Личный кабинет пользователя<br>
+                        - Установка и настройка расширения для работы с ролями<br>
+                        - auth. from facebook API<br>
+                        - Поднят WebSocket server<br>
+                        - Доступна в браузере google-карта для конкретного клиента с просмотром пути и текущих координат.<br>
+                        - Используется алгоритм апроксимации для пересылания координат.<br>
+                    </p>
+                    <!-- #END contentText -->
+                </div>
+                <!-- Блок-закладка для сворачивания контента -->
+                <div class="spoilerCloseBox">
+                    <div class="spoilerCloseTab" title="Свернуть">▲</div>
+                </div>
+            </div>
+        </div><!-- Spoiler # -->
+
+        <h3 class="titleInfo">Технологии:</h3>
+        <p class="contentText1">
+            Yii2 Advanced, webSocket, Ratchet, ZeroMQ, MySQL, Facebook API, budgettaxi API, jQuery<br>
+        </p>
+        <br><br>
+
+<!-- App №3 -->
+        <div class="titleAppsBox">
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <h3 class="titleApps">mailSender</h3>
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <div class="titleAppsTagBox">
+                <span class="titleAppsTag">Yii2</span>
+                <span class="titleAppsTag">CRUD</span>
+            </div>
+        </div>
+        <!-- Content -->
+        <h3 class="titleInfo">Описание проекта:</h3>
+        <p class="contentText1">
+            Создание почтовых рассылок (по CRON) и их отправка на email.<br>
+            • CRUD данных email-ов и рассылок (с орг. очередей их рассылки).<br>
+            • В Yii2 реализован вход (форма) для пользователя<br>
+            • Имеется форма для добавления email-ов (в DB) либо возможность загрузить файл с определенной<br>структурой записи данных email-ов<br>
+            • Форма создания рассылки заносящаяся в таблицу очередей<br>
+            • По CRON-у выполняется периодическая отправка почты.<br>
+            • Логирование выполнения рассылки<br>
+            • Имеется CRUD рассылок, e-mail-ов, очередей.<br>
+        </p>
+        <h3 class="titleInfo">Технологии:</h3>
+        <p class="contentText1">
+            Yii2, MySQL.
+        </p>
+        <br>
+
+<!-- App №4,5 -->
+        <div class="titleAppsBox">
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <h3 class="titleApps">Разное:</h3>
+            <span class="titleAppsSep">- - - - - - - -</span>
+            <div class="titleAppsTagBox">
+                <span class="titleAppsTag">bootstrap</span>
+            </div>
+        </div>
+        <!-- App №4 -->
+        <h3 class="titleInfo">Сайт авто-услуг по электроприборам.</h3>
+        <p class="contentText1">
+            - Верстка + адаптивка.<br>
+            - Ротатор изображений с контентом, и функционал добавления отзывов.<br>
+            - Adaptive DropDownMenu.<br>
+            - JS счетчик бегущих цифр.<br>
+        </p>
+        <!-- App №5 -->
+        <h3 class="titleInfo">Сайт сервиса sms-рассылок.</h3>
+        <p class="contentText1">
+            - Верстка + адаптивка.<br>
+        </p><br>
+
+    </div><!-- END OF: #Box-->
+    <script type="text/javascript" src="js/lightbox.js"></script>
+</body>
+</html>
